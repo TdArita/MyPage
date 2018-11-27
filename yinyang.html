@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="./yinyang.css"> -->
+	<style>
+		*{
+	border: 0;
+	margin: 0;
+}
+.yinyang{
+	box-sizing: content-box;
+	width: 98px;
+	height: 196px;
+	background-color: black;
+	border-color: gray;
+	border-style: solid;
+	border-width: 2px 100px 2px 2px;
+	border-radius: 100%;
+	position: relative;
+}
+.yinyang:before{
+	content: "";
+	position: absolute;
+	background-color: gray;
+	left: 50%;
+	top: 0;
+	border: 34px solid black;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+}
+.yinyang:after{
+	content: "";
+	position: absolute;
+	background-color: black;
+	left: 50%;
+	bottom: 0;
+	border: 34px solid gray;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+}
+	</style>
+</head>
+<body>
+	<div id="yin-yang"><div class="yinyang"></div></div>
+</body>
+</html>
