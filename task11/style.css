@@ -56,6 +56,7 @@ hr{
 }
 .topNavBar nav > ul > li > a:hover {
   border-bottom: 3px solid #e06567;
+  transition: all 0.5s;
 }
 
 .topNavBar .logo {
@@ -196,17 +197,92 @@ section h2{
   margin-bottom: 30px;
   margin-top: 30px;
 }
-section .skills{
-  padding: 10px 20px;
-  background-color: #fff;
+section > .skills-top{
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.42);
+  background-color: #fff;
 }
-section ol{
+section > .skills-top  h3{
+  font-weight: normal;
+  font-size: 15px;
+
+}
+ol{
   list-style: none;
 }
-section ol .skills1{
-  width: 50%;
-  border: 1px solid red;
-  height: 4px;
-  background-color: black;
+section > ol {
+  padding: 42px 50px 15px;
+}
+section .progressBar{
+  height: 5px;
+  background-color: #e6a6a7;
+  border-radius: 2px;
+  margin: 4px 0px 40px;
+}
+section .progressBar .progress{
+  height: 100%;
+  width: 30%;
+  background-color: #e6686a;
+  border-radius: 2px;
+}
+section > ol > li{
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+section > ol > li:nth-child(even){
+  float: right;
+}
+section >nav >ol > li{
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+section >nav >ol > li:nth-child(1){
+  margin-left: 0px;
+}
+.portfolio{
+  text-align: center;
+}
+section >nav{
+  text-align: center;
+}
+section >nav >ol{
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+section >nav{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+section >nav .bar{
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+section >nav .bar .bar-inner{
+  height: 100%;
+  background-color: #ee6666;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+section >nav .bar.state1 .bar-inner{
+  margin-left: 0;
+  width: 15%;
+}
+section >nav .bar.state2 .bar-inner{
+  margin-left: 64px;
+  width: 20%;
+}
+section >nav .bar.state3 .bar-inner{
+  margin-left: 140px;
+  width: 40%;
+}
+.works{
+  position: relative;
+}
+.works > .big,
+.works > .small{
+  position: absolute;
 }
