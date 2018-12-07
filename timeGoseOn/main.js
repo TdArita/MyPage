@@ -1,6 +1,3 @@
-Date.prototype.toLocaleString = function () {
-        return this.getFullYear()+'-'+(this.getMonth()+1)+'-'+this.getDate()+' '+this.getHours()+':'+this.getMinutes()+':'+this.getSeconds()
-    }
 setInterval(function() {
 	var a = new Date()
 	var b = a.getTime()
@@ -9,6 +6,6 @@ setInterval(function() {
 	c = parseInt(c)
 	console.log(c)
 	var d = document.getElementById('time')
-	var e = a.toLocaleString()
+	var e = a.toLocaleDateString()
 	d.innerHTML = "</br></br></br>" + "现在是" + e + "</br></br></br>" + "这一年已过去" + c/1000000 + "%" + "</br></br></br>" + "大宝你慌了吗？"
 }, 100)
