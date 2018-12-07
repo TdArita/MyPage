@@ -7,5 +7,5 @@ setInterval(function() {
 	console.log(c)
 	var d = document.getElementById('time')
 	var e = a.toLocaleString()
-	d.innerHTML = "现在是" + e + "</br></br></br>" + "这一年已过去" + c/1000000 + "%"
+	d.innerHTML = "现在是" + e + "</br></br></br>" + "这一年已过去" + c/1000000 + "%" + "</br></br></br>" + "大宝你慌了吗？"
 }, 100)
