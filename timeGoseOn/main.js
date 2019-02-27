@@ -1,7 +1,7 @@
 setInterval(function() {
 	var a = new Date()
 	var b = a.getTime()
-	var c = (b - Date.parse('01 Jan 2018 00:00:00 GMT')) / ( Date.parse('01 Jan 2019 00:00:00 GMT') - Date.parse('01 Jan 2018 00:00:00 GMT'))
+	var c = (b - Date.parse('01 Jan 2019 00:00:00 GMT')) / ( Date.parse('01 Jan 2020 00:00:00 GMT') - Date.parse('01 Jan 2019 00:00:00 GMT'))
 	c = Math.floor(c*100000000)
 	c = parseInt(c)
 	console.log(c)
