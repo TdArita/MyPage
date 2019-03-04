@@ -1,0 +1,8 @@
+canvas {
+    background:bisque;
+    width: 600px;
+    height: 1000px;
+}
+.click-space{
+    position: absolute;
+}
