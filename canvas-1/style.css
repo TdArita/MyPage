@@ -1,8 +1,21 @@
+body{
+    margin: 0;
+}
 canvas {
+    display: block;
     background:bisque;
-    width: 600px;
-    height: 1000px;
 }
 .click-space{
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.actions > #painter {
+    display: none;
+}
+.actions.x > #painter {
+    display: inline-block;
+}
+.actions.x > #eraser{
+    display: none;
 }
