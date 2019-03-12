@@ -12,9 +12,30 @@
 <body>
     <canvas id="canvasArea" width="300" height="300"></canvas>
     <div class="actions" id="actions">
-        <button id="painter">画笔</span>
-        <button id="eraser">橡皮擦</span>
+        <svg id="pen" class="active icon" aria-hidden="true">
+                <use xlink:href="#icon-pen"></use>
+        </svg>
+        <svg id="eraser" class="icon" aria-hidden="true">
+                <use xlink:href="#icon-Eraser-Tool"></use>
+        </svg>
+        <svg id="clear" class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shuaxin"></use>
+        </svg>
+        <svg id="save" class="icon" aria-hidden="true">
+                <use xlink:href="#icon-save"></use>
+        </svg>
     </div>
+    <ol class="colors">
+        <li id="black" class="black active"></li>
+        <li id="red" class="red"></li>
+        <li id="green" class="green"></li>
+        <li id="blue" class="blue"></li>
+    </ol>
+    <ol class="sizes">
+        <li id="thin" class="thin"></li>
+        <li id="thick" class="thick"></li>
+    </ol>
 </body>
     <script src="main.js"></script>
+    <script src="//at.alicdn.com/t/font_1083539_9t2m920dd4k.js"></script>
 </html>
