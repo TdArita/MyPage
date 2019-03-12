@@ -5,10 +5,12 @@ canvas {
     display: block;
     background:bisque;
 }
-.click-space{
+
+.actions{
     position: fixed;
     bottom: 0;
     left: 0;
+    margin-top: -20px;
 }
 .actions > #painter {
     display: none;
