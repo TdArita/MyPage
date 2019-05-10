@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>个人简历</title>
+  <title>resume</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./icon.js"></script>
   <style type="text/css">
@@ -12,11 +12,26 @@
        fill: currentColor;
        overflow: hidden;
     }
+    .site-welcome{
+      display: none;
+      position: fixed;
+      top: 0;left: 0;width: 100%;height: 100%;
+      background-color: #888;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+    .site-welcome.active{
+      display: flex;
+    }
 </style>
 </head>
 
 <body>
-  <div class="topNavBar">
+  <div class="site-welcome active" id="siteWelcome">
+      <div class="loading"></div>
+  </div>
+    <div class="topNavBar">
     <div class="topNavBar-inner clearfix">
       <a class="logo" href="#" alt="logo" style="float: left;">
         <span class="rs">RS</span>
@@ -193,6 +208,9 @@
       </div>
     </div>
   </section>
+  <script>
+    siteWelcome.classList.remove("active")
+  </script>
 </body>
 
 </html>
