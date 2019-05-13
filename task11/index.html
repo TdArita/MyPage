@@ -247,9 +247,26 @@
         let href = a.getAttribute('href')
         let element = document.querySelector(href)
         let top = element.offsetTop
-        window.scrollTo(0, top -80)
+        // window.scrollTo(0, top -80)
+
+        let n = 30 
+        let t = 500 / n //每次动的时间
+        let targrtY = top - 80
+        let currentY = window.scrollY
+        let S = targrtY - currentY
+        let s = S / n
+        let j = 0
+        let ds = S-s*j
+        var inter = setInterval(()=>{
+          if(j===30){
+            window.clearInterval(inter)
+            return
+          }
+          j = j + 1
+          window.scrollTo(0,currentY + s*j)
+        },t)
+        console.log(j)
       };
-      
     }
   </script>
 </body>
