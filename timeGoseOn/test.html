@@ -3,9 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>时间都去哪儿啦</title>
+	<style>
+		.wrap{
+			position: relative;
+			width: 80%;
+			height: 30px;
+			border: 1px solid;
+			margin: auto;
+		}
+		.progress{
+			height: 100%;
+			background-color: green;
+			width: 0%;
+		}
+	</style>
 </head>
 <body>
 	<div id="time" style="text-align:center; font-size: 45px; font-weight: bold; color: red; margin: auto 0;"></div>
+	<div class="wrap">
+		<div class="progress"></div>
+	</div>
 	<script src="./main.js"></script>
 </body>
 </html>
